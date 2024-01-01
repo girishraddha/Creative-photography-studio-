@@ -1,0 +1,337 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master_page.master.cs" Inherits="photoweb2.master_page" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>creative photography </title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rokkitt:100,300,400,700" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />  
+
+    <!-- Icomoon Icon Fonts-->
+    <link href="css/icomoon.css" rel="stylesheet" type="text/css" />
+
+	<!-- Ion Icon Fonts-->
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Bootstrap  -->
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- Magnific Popup -->
+	
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+
+	<!-- Flexslider  -->
+	
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+
+	<!-- Owl Carousel -->
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Date Picker -->
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
+	
+
+	<!-- Flaticons  -->
+    <link href="fonts/flaticon/font/flaticon.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Theme style  -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+	
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="colorlib-loader"></div>
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row ">
+						<div class="col-sm-7 col-md-9">
+							<div id="colorlib-logo" >
+                            <a href="index.aspx">Creative Photography</a>
+                            </div>
+						</div>
+						
+		         </div>
+					<div class="row">
+                        
+						<div class="col-sm-12 text-left menu-1  ">
+							<ul>
+								<li class="active"><a href="index.aspx">Home</a></li>
+								<li class="has-dropdown active" >
+									<a href="#best"> Gallary </a>
+									<ul class="dropdown">
+										<li ><a href="Add_prod.aspx">Product Detail</a></li>
+										<li><a href="cart.html">Wedding Shoot</a></li>
+										<li><a href="checkout.html">Model Shoot</a></li>
+										<li><a href="order-complete.html">Other Shoot</a></li>
+										
+									</ul>
+								</li>
+								<li class="active" ><a href="about.aspx">About</a></li>
+								<li class="active"><a href="contact.aspx">Contact</a></li>
+                                <li class="active"><a href="#">Blog</a></li>
+                                
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                <li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+	</nav>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+     <div class="container">
+				<div class="row mb-1">
+					<div class="col-sm-8 offset-sm-2 text-center colorlib-heading">
+						<h2> Our Best </h2>
+					</div>
+				</div>
+				<div class="row row-pb-md">
+					<div class="col-lg-3 mb-4 text-center">
+						<div class="product-entry border">
+							<a href="#" class="prod-img">
+                                <asp:Image ID="Image6" runat="server" src="images/BW_1.jpg" class="img-fluid" alt="Free html5 bootstrap 4 template"/>
+								
+							</a>
+							<div class="desc">
+								<h2><a href="#">Black And White Photo</a></h2>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 mb-4 text-center">
+						<div class="product-entry border">
+							<a href="#" class="prod-img">
+                                <asp:Image ID="Image7" runat="server" src="images/Carla_Mike_1.jpg" class="img-fluid" alt="Free html5 bootstrap 4 template" />
+								
+							</a>
+							<div class="desc">
+								<h2><a href="#">Carla and Mike</a></h2>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 mb-4 text-center">
+						<div class="product-entry border">
+							<a href="#" class="prod-img">
+                                <asp:Image ID="Image8" runat="server" src="images/gal1.jpg" class="img-fluid" alt="Free html5 bootstrap 4 template" />
+								
+							</a>
+							<div class="desc">
+								<h2><a href="#">Gal and Riya</a></h2>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 mb-4 text-center">
+						<div class="product-entry border">
+							<a href="#" class="prod-img">
+                                <asp:Image ID="Image9" runat="server" src="images/Sara_David_1.jpg" class="img-fluid" alt="Free html5 bootstrap 4 template"/>
+				
+							</a>
+							<div class="desc">
+								<h2><a href="#">Sara and David</a></h2>
+								
+							</div>
+						</div>
+					</div>
+
+                    <div class="row row-pb-md">
+					<div class="col-lg-3 mb-4 text-center">
+						<div class="product-entry border">
+							<a href="#" class="prod-img">
+                                <asp:Image ID="Image10" runat="server" src="images/Model_4.jpg" class="img-fluid" alt="Free html5 bootstrap 4 template" />
+								<img >
+							</a>
+							<div class="desc">
+								<h2><a href="#">Model Photo</a></h2>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 mb-4 text-center">
+						<div class="product-entry border">
+							<a href="#" class="prod-img">
+                                <asp:Image ID="Image11" runat="server" src="images/holiday_1.jpg" class="img-fluid" alt="Free html5 bootstrap 4 template" />
+								
+							</a>
+							<div class="desc">
+								<h2><a href="#"> Outer shoot</a></h2>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 mb-4 text-center">
+						<div class="product-entry border">
+							<a href="#" class="prod-img">
+                                <asp:Image ID="Image12" runat="server" src="images/holiday_2.jpg" class="img-fluid" alt="Free html5 bootstrap 4 template" />
+								<img >
+							</a>
+							<div class="desc">
+								<h2><a href="#">Nature Shoot</a></h2>
+							
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 mb-4 text-center">
+						<div class="product-entry border">
+							<a href="#" class="prod-img">
+                                <asp:Image ID="Image13" runat="server" src="images/cover3.jpg" class="img-fluid" alt="Free html5 bootstrap 4 template" />
+								
+							</a>
+							<div class="desc">
+								<h2><a href="#">Pre-Wedding</a></h2>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+               
+				<div class="row ">
+					<div class="col-md-12 ">
+						<center ><a href="#" class="btn btn-primary btn-lg ">More</a></center>
+					</div>
+				</div>
+               
+			</div>
+		</div>
+
+		
+
+
+    <div class="colorlib-partner">
+			<div class="container ">
+				<div class="row">
+					<div class="col partner-col text-center">
+                        <asp:Image ID="Image1" runat="server" src="images/holiday_1.jpg" class="img-fluid shadow-lg  mb-5 bg-5" alt="Free html4 bootstrap 4 template" />
+					
+					</div>
+					<div class="col partner-col text-center">
+                        <asp:Image ID="Image2" runat="server"  src="images/holiday_2.jpg" class="img-fluid shadow-lg  mb-5 bg-5" alt="Free html4 bootstrap 4 template"/>
+					
+					</div>
+					<div class="col partner-col text-center">
+                        <asp:Image ID="Image3" runat="server"  src="images/holiday_3.jpg" class="img-fluid shadow-lg  mb-5 bg-5" alt="Free html4 bootstrap 4 template" />
+						
+					</div>
+					<div class="col partner-col text-center">
+                        <asp:Image ID="Image4" runat="server"  src="images/holiday_4.jpg" class="img-fluid shadow-lg  mb-5 bg-5" alt="Free html4 bootstrap 4 template" />
+						
+					</div>
+					<div class="col partner-col text-center"  >
+                        <asp:Image ID="Image5" runat="server" src="images/holiday_5.jpg" class="img-fluid shadow-lg  mb-5 bg-5" alt="Free html4 bootstrap 4 template"/>
+						
+					</div> 
+				</div>
+			</div>
+		</div>
+    <footer id="colorlib-footer" role="contentinfo">
+			<div class="container mb-5">
+				<div class="row row-pb-md  mb-5">
+					<div class="col footer-col colorlib-widget">
+						<h4>Creative</h4>
+<%--						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>--%>
+						<p>
+							<ul class="colorlib-social-icons">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							</ul>
+						</p>
+					</div>
+					<div class="col footer-col colorlib-widget">
+						<h4>Customer Care</h4>
+						<p>
+							<ul class="colorlib-footer-links">
+								<li><a href="#">Gallary</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Site maps</a></li>
+							</ul>
+						</p>
+					</div>
+					<div class="col footer-col colorlib-widget">
+						<h4>Information</h4>
+						<p>
+							<ul class="colorlib-footer-links">
+								<li><a href="#">Delivery Information</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Support</a></li>
+								<li><a href="#">Order Tracking</a></li>
+							</ul>
+						</p>
+					</div>
+
+					<div class="col footer-col">
+						<h4>Contact Information</h4>
+						<ul class="colorlib-footer-links">
+							<li>Sayaji Plaza <br>Sai Mandir Gargoti,416209</li>
+							<li><a href="tel://1234567920">+ 1235 2355 98</a></li>
+							<li><a href="girishraddha24@gmail.com">info@Creative.com</a></li>
+							<%--<li><a href="#">Creative.com</a></li>--%>
+						</ul>
+					</div>
+				</div>
+                <br /> <br />
+			</div>
+		
+		</footer>
+
+    </form>
+    <!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+   <!-- popper -->
+   <script src="js/popper.min.js"></script>
+   <!-- bootstrap 4.1 -->
+   <script src="js/bootstrap.min.js"></script>
+   <!-- jQuery easing -->
+   <script src="js/jquery.easing.1.3.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Date Picker -->
+	<script src="js/bootstrap-datepicker.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
